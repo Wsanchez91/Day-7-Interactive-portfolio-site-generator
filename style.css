@@ -1,0 +1,8 @@
+img {
+    width: 200px; /* or whatever size you want */
+    height: auto; /* keeps aspect ratio */
+    border-radius: 8px; /* optional: rounds the corners */
+    display: block;
+    margin: 0 auto; /* centers the image */
+    margin-left: 0;
+  }

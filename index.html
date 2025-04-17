@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio site for William Sanchez, Frontend Developer and bootcamp grad."
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Portfolio Generator</title>
+  </head>
+  <body>
+    <header>
+      <h1>Portfolio Generator</h1>
+    </header>
+    <form>
+      <section id="personal-info">
+        <div id="image">
+          <label for="profile-img"></label>
+          <input type="file" accept="image/*" id="profile-img" />
+          <img
+            id="preview-img"
+            alt="profile preview"
+            style="display: none; max-width: 200px; margin-top: 10px"
+          />
+        </div>
+        <div id="name">
+          <label for="name-input">Name: </label>
+          <input
+            type="text"
+            id="name-input"
+            placeholder="Enter name"
+            required
+          />
+        </div>
+        <div id="position">
+          <label for="position-input">Position: </label>
+          <input
+            type="text"
+            id="position-input"
+            placeholder="Enter your position"
+            required
+          />
+        </div>
+        <div id="bio">
+          <label for="bio-input">Bio: </label>
+          <input
+            type="text"
+            id="bio-input"
+            placeholder="Enter a bio"
+            required
+          />
+        </div>
+      </section>
+      <section id="projects">
+        <div>
+          <h2>Projects</h2>
+          <ul id="project-list">
+            <li class="project-card">
+              <h3>
+                <label for="project-title-input">Project Title: </label>
+                <input
+                  type="text"
+                  id="project-title-input"
+                  placeholder="Enter project title"
+                  required
+                />
+              </h3>
+              <div id="description">
+                <label for="project-des">Description: </label>
+                <textarea
+                  id="project-des"
+                  placeholder="Enter a description"
+                ></textarea>
+              </div>
+              <div id="tech">
+                <label for="tech-input">Tech: </label>
+                <input
+                  type="text"
+                  id="tech-input"
+                  placeholder="Enter the tech you used"
+                />
+              </div>
+              <div id="links">
+                <a href="#" id="github-link">GitHub</a> |
+                <a href="#" id="deployed-link">Live</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </form>
+    <section id="portfolio-review-page">
+      <h2>Portfolio Preview</h2>
+      <div id="portfolio-review"></div>
+    </section>
+    <section id="buttons">
+      <button type="button" id="export-html">Export as HTML</button>
+      <button type="button" id="export-json">Export as JSON</button>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
