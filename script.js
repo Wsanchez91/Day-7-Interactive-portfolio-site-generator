@@ -8,6 +8,6 @@ const projectDes = document.querySelector("#project-des");
 const projectTech = document.querySelector("#tech-input");
 const githubLink = document.querySelector("#github-link");
 const deployLink = document.querySelector("#deployed-link");
-const portfolioReview = document.querySelector("#portfolio-review");
+// const portfolioReview = document.querySelector("#portfolio-review");
 const exportHtml = document.querySelector("#export-html");
 const exportJson = document.querySelector("#export-json");
