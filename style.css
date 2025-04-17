@@ -1,8 +1,72 @@
+body {
+  background-color: cornflowerblue;
+}
+
 img {
-    width: 200px; /* or whatever size you want */
-    height: auto; /* keeps aspect ratio */
-    border-radius: 8px; /* optional: rounds the corners */
-    display: block;
-    margin: 0 auto; /* centers the image */
-    margin-left: 0;
-  }
+  width: 100px; /* or whatever size you want */
+  height: auto; /* keeps aspect ratio */
+  border-radius: 8px; /* optional: rounds the corners */
+  display: block;
+  margin: 0 auto; /* centers the image */
+  margin-left: 0;
+}
+
+h1,
+h2 {
+  margin: auto;
+  text-align: center;
+  font-style: italic;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+h1:hover {
+  color: darkorange;
+}
+
+form, #portfolio-review-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+form,
+#portfolio-review-page {
+  display: flex;
+  margin: auto;
+  background-color: darkorange;
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  width: 75%;
+}
+
+#personal-info,
+#projects,
+#portfolio-review-layout {
+  background-color: cornflowerblue;
+  margin: 10px 10px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  width: 75%;
+}
+
+#personal-info > div {
+  margin: 10px 15px;
+  font-style: italic;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+#export-html,
+#export-json {
+  margin: 10px;
+}
+
+#portfolio-name-position {
+  margin: 0 0 0 start;
+}

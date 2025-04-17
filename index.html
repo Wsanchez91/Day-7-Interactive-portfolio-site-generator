@@ -14,7 +14,7 @@
     <header>
       <h1>Portfolio Generator</h1>
     </header>
-    <form>
+    <form id="form">
       <section id="personal-info">
         <div id="image">
           <label for="profile-img"></label>
@@ -92,15 +92,25 @@
       </section>
     </form>
     <section id="portfolio-review-page">
-      <h2>Portfolio Preview</h2>
-      <div id="portfolio-review">
-        <div id="portfolio-review-img"></div>
-        <img src="#" alt="placeholder" />
+      <div id="portfolio-review-layout">
+        <div>
+          <h2>Portfolio Preview</h2>
+        </div>
+        <div id="portfolio-review">
+          <div id="portfolio-review-img"></div>
+          <img src="#" alt="placeholder" />
+        </div>
+        <section id="portfolio-name-position">
+          <div id="portfolio-review-name">Name:</div>
+          <div id="portfolio-review-position">Position:</div>
+        </section>
+        <section id="portfolio-review-bio-layout">
+          <div id="portfolio-review-bio">Bio:</div>
+        </section>
+        <section id="portfolio-review-projects-layout">
+          <div id="portfolio-review-projects">Projects:</div>
+        </section>
       </div>
-      <div id="portfolio-review-name">Name:</div>
-      <div id="portfolio-review-position">Position:</div>
-      <div id="portfolio-review-bio">Bio:</div>
-      <div id="portfolio-review-projects">Projects: </div>
     </section>
     <section id="buttons">
       <button type="button" id="export-html">Export as HTML</button>
