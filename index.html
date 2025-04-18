@@ -45,13 +45,13 @@
         </div>
         <div id="bio">
           <label for="bio-input">Bio: </label>
-          <input
-            type="text"
+          <textarea
             id="bio-input"
             placeholder="Enter a bio"
             required
-          />
+          ></textarea>
         </div>
+        <button id="profile-btn">Enter</button>
       </section>
       <section id="projects">
         <div>
@@ -82,10 +82,15 @@
                   placeholder="Enter the tech you used"
                 />
               </div>
-              <div id="links">
-                <a href="#" id="github-link">GitHub</a> |
-                <a href="#" id="deployed-link">Live</a>
+              <div id="github-url">
+                <label for="github-link">Github: </label>
+                <input type="url" id="github-link" placeholder="Add github link"/>
               </div>
+              <div id="deployed-url">
+                <label for="deployed-link">Live: </label>
+                <input type="url" id="deployed-link" placeholder="Add Live link"/>
+              </div>
+             <button id="add-btn">Add</button>
             </li>
           </ul>
         </div>
@@ -96,9 +101,14 @@
         <div>
           <h2>Portfolio Preview</h2>
         </div>
-        <div id="portfolio-review">
+        <div id="portfolio-img">
           <div id="portfolio-review-img"></div>
-          <img src="#" alt="placeholder" />
+          <img
+            src="#"
+            alt="placeholder"
+            id="new-profile-pic"
+            style="display: none"
+          />
         </div>
         <section id="portfolio-name-position">
           <div id="portfolio-review-name">Name:</div>
@@ -110,6 +120,10 @@
         <section id="portfolio-review-projects-layout">
           <div id="portfolio-review-projects">Projects:</div>
         </section>
+        <div id="links">
+          <a href="#" id="github-preview-link">GitHub</a> |
+          <a href="#" id="deployed-preview-link">Live</a>
+        </div>
       </div>
     </section>
     <section id="buttons">

@@ -8,6 +8,47 @@ const projectDes = document.querySelector("#project-des");
 const projectTech = document.querySelector("#tech-input");
 const githubLink = document.querySelector("#github-link");
 const deployLink = document.querySelector("#deployed-link");
-// const portfolioReview = document.querySelector("#portfolio-review");
+const portfolioImg = document.querySelector("#portfolio-img");
+const portfolioName = document.querySelector("#portfolio-review-name");
+const portfolioPosition = document.querySelector("#portfolio-review-position");
+const portfolioBio = document.querySelector("#portfolio-review-bio");
+const portfolioProjects = document.querySelector("#portfolio-review-projects");
+const portfolioPreview = document.querySelector("#portfolio-review-page");
 const exportHtml = document.querySelector("#export-html");
 const exportJson = document.querySelector("#export-json");
+const profileInfoBtn = document.querySelector("#profile-btn");
+const addBtn = document.querySelector("#add-btn");
+
+profileInfoBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  //this is adding the uploaded image to the portfolio preview.
+  const fileInput = document.querySelector("#profile-img");
+  const newProfileImg = document.querySelector("#new-profile-pic");
+  const file = fileInput.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      newProfileImg.src = e.target.result;
+      newProfileImg.style.display = "block";
+    };
+    reader.readAsDataURL(file);
+  }
+
+  //This is adding the name input into the preview.
+  const nameSpan = document.createElement("span");
+  portfolioName.textContent = "Name: ";
+  nameSpan.textContent = nameInput.value;
+  portfolioName.appendChild(nameSpan);
+
+  //This is adding the position input into the preview.
+  const positionSpan = document.createElement("span");
+  portfolioPosition.textContent = "Position: ";
+  positionSpan.textContent = positionInput.value;
+  portfolioPosition.appendChild(positionSpan);
+
+  //This is adding the bio input in to the preview.
+  const bioSpan = document.createElement("span");
+  portfolioBio.textContent = "Bio: ";
+  bioSpan.textContent = bioInput.value;
+  portfolioBio.appendChild(bioSpan);
+});
