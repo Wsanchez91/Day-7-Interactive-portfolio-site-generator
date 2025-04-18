@@ -16,10 +16,10 @@ const portfolioProjects = document.querySelector("#portfolio-review-projects");
 const portfolioPreview = document.querySelector("#portfolio-review-page");
 const exportHtml = document.querySelector("#export-html");
 const exportJson = document.querySelector("#export-json");
-const profileInfoBtn = document.querySelector("#profile-btn");
+const updateInfoBtn = document.querySelector(".update-btn");
 const addBtn = document.querySelector("#add-btn");
 
-profileInfoBtn.addEventListener("click", (e) => {
+updateInfoBtn.addEventListener("click", (e) => {
   e.preventDefault();
   //this is adding the uploaded image to the portfolio preview.
   const fileInput = document.querySelector("#profile-img");
@@ -52,3 +52,4 @@ profileInfoBtn.addEventListener("click", (e) => {
   bioSpan.textContent = bioInput.value;
   portfolioBio.appendChild(bioSpan);
 });
+
