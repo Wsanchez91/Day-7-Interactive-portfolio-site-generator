@@ -53,3 +53,18 @@ updateInfoBtn.addEventListener("click", (e) => {
   portfolioBio.appendChild(bioSpan);
 });
 
+addBtn.addEventListener("click", () => {
+  const projectListSection = document.querySelector("#project-list-section");
+  const projectLi = document.createElement("li");
+  const projectList = [];
+  const projectObj = {
+    title: projectTitle.value,
+    description: projectDes.value,
+    tech: projectTech.value,
+    github: githubLink.value,
+    deployed: deployLink.value,
+  };
+
+  projectListSection.push(projectLi);
+  projectList.push(projectObj);
+});
