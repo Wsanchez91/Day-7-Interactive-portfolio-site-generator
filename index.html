@@ -13,6 +13,7 @@
   <body>
     <header>
       <h1>Portfolio Generator</h1>
+      <button type="button" id="toggle-dark-mode">Toggle Dark Mode</button>
     </header>
     <form id="form">
       <section id="personal-info">
@@ -101,19 +102,21 @@
         <div>
           <h2>Portfolio Preview</h2>
         </div>
-        <div id="portfolio-img">
-          <div id="portfolio-review-img"></div>
-          <img
-            src="#"
-            alt="placeholder"
-            id="new-profile-pic"
-            style="display: none"
-          />
+        <div id="portfolio-header">
+          <div id="portfolio-img">
+            <div id="portfolio-review-img"></div>
+            <img
+              src="#"
+              alt="placeholder"
+              id="new-profile-pic"
+              style="display: none"
+            />
+          </div>
+          <div id="portfolio-name-position">
+            <div id="portfolio-review-name">Name:</div>
+            <div id="portfolio-review-position">Position:</div>
+          </div>
         </div>
-        <section id="portfolio-name-position">
-          <div id="portfolio-review-name">Name:</div>
-          <div id="portfolio-review-position">Position:</div>
-        </section>
         <section id="portfolio-review-bio-layout">
           <div id="portfolio-review-bio">Bio:</div>
         </section>
@@ -123,10 +126,6 @@
             </ul>
           </div>
         </section>
-        <div id="links">
-          <a href="#" id="github-preview-link">GitHub</a> |
-          <a href="#" id="deployed-preview-link">Live</a>
-        </div>
       </div>
     </section>
     <section id="buttons">
