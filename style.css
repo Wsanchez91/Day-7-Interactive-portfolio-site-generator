@@ -70,3 +70,22 @@ form,
 #portfolio-name-position {
   margin: 0 0 0 start;
 }
+
+.delete-btn {
+  margin-top: 10px;
+  display: block;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.project-preview {
+  margin-bottom: 20px;
+}

@@ -54,9 +54,6 @@ updateInfoBtn.addEventListener("click", (e) => {
 });
 
 addBtn.addEventListener("click", () => {
-  const projectListSection = document.querySelector("#project-list-section");
-  const projectLi = document.createElement("li");
-  const projectList = [];
   const projectObj = {
     title: projectTitle.value,
     description: projectDes.value,
@@ -65,6 +62,25 @@ addBtn.addEventListener("click", () => {
     deployed: deployLink.value,
   };
 
-  projectListSection.push(projectLi);
-  projectList.push(projectObj);
+  const projectListSection = document.querySelector("#project-list-section");
+  const projectLi = document.createElement("li");
+  projectLi.classList.add("project-preview");
+
+  projectLi.innerHTML = `
+    <h3>${projectObj.title}</h3>
+    <p>${projectLi.description}</p>
+    <p><strong>Tech: </strong>${projectLi.tech}</p>
+    <a href="${projectObj.github}" target="_blank">GitHub</a> | 
+    <a href="${projectObj.deployed}" target="_block">Live</a>`;
+
+  const deleteBtn = document.createElement("button");
+  deleteBtn.textContent = "Delete";
+  deleteBtn.type = "button";
+  deleteBtn.classList.add("delete-btn");
+  deleteBtn.addEventListener("click", () => {
+    projectLi.remove();
+  });
+
+  projectLi.appendChild(deleteBtn);
+  projectListSection.appendChild(projectLi);
 });
